@@ -6,4 +6,4 @@ gameFolderList.forEach((folder)=>{
 })
 
 
-fs.writeFileSync('./src/contents/test.json','[test]')
+fs.writeFileSync('./src/contents/test.json','{"test":"test"}')

@@ -6,6 +6,7 @@ import { useState } from 'react'
 import { GitHub, Home } from '@material-ui/icons'
 import memberIntro from '../assets/member-introductions.json'
 import MemberInfoCard from './MemberInfoCard'
+import testJson from '../contents/test.json'
 
 const useStyles = makeStyles({
   root: {
@@ -45,7 +46,7 @@ function MainProfile({isSlideFinish}:MainProfileProps) {
 
           >
             <Typography>
-              Team-Greimon 은  2인으로 구성된 게임 개발 동아리입니다.
+              Team-Greimon 은  2인으로 구성된 게임 개발 동아리입니다. {testJson.test}
             </Typography>
           </Fade>
           <Divider className={classes.dividerStyle} />
