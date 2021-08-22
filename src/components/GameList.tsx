@@ -1,8 +1,8 @@
 import { Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import { useEffect, useState } from "react";
-import game_image from "../game_list/NoIdea/image.png"
-import game_info from "../game_list/NoIdea/info.json"
+import game_image from "../contents/game_list/NoIdea/image.png"
+import game_info from "../contents/game_list/NoIdea/info.json"
 import { GameInfo } from "../types/FileTypes";
 import GameInfoCard from "./GameInfoCard";
 import * as fs from 'fs'
