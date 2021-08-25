@@ -22,6 +22,9 @@ const useStyles = makeStyles({
   },
   dividerStyle: {
     margin: '4px',
+  },
+  headerText: {
+    fontSize: '25px',
   }
 })
 
@@ -37,15 +40,18 @@ function MainProfile({ isSlideFinish }: MainProfileProps) {
       <Fade in={isSlideFinish} timeout={1000}
         onEntered={() => { setTypoFinish(true) }}
       >
-        <Typography>
+        <Typography className={classes.headerText}>
           안녕하세요 Team-Greimon 입니다!
         </Typography>
       </Fade>
-      <Fade in={isSlideFinish} timeout={2000}
-
-      >
+      <Fade in={isSlideFinish} timeout={2000}>
         <Typography>
           Team-Greimon 은  2인으로 구성된 게임 개발 동아리입니다.
+        </Typography>
+      </Fade>
+      <Fade in={isSlideFinish} timeout={2500}>
+        <Typography>
+          각자 자유롭게 게임을 만들고 있습니다.
         </Typography>
       </Fade>
       <Divider className={classes.dividerStyle} />

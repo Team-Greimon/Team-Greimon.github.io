@@ -7,5 +7,7 @@ export interface GameInfo {
 }
 
 export interface ActivityLog {
-
+  key: string,
+  name: string,
+  content: string,
 }

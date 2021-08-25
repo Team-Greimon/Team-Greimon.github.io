@@ -18,9 +18,6 @@ const useStyles = makeStyles({
       display: 'none'
     },
   },
-  gameCard: {
-    marginBottom: '4px',
-  }
 })
 
 function GameList() {
@@ -30,7 +27,7 @@ function GameList() {
     <div className={classes.root}>
       {game_info.map((item, value) => {
         return (
-          <GameInfoCard key={value} name={item.name} link={item.link} image={"../contents/game_list/NoIdea/image.png"} developer={item.developer} fadeTimeout={(value + 1) * 500} />
+          <GameInfoCard key={value} name={item.name} link={item.link} image={item.image} developer={item.developer} fadeTimeout={(value + 1) * 300} />
         )
       })}
     </div>

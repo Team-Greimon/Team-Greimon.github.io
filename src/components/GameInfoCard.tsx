@@ -4,7 +4,7 @@ const useStyles = makeStyles({
   root: {
     width: '480px',
     height: '100px',
-    marginBottom: '4px',
+    marginBottom: '8px',
   },
   gameImage: {
     minWidth: '100px',
@@ -23,7 +23,10 @@ const useStyles = makeStyles({
 
   },
   gameDeveloperText: {
-
+    color: '#908f90',
+    fontSize: '12px',
+    border: '0.5px solid #e3f0ed',
+    borderRadius: '5px',
   }
 
 })
@@ -52,7 +55,7 @@ function GameInfo({ name, link, image, developer, fadeTimeout }: GameInfoProps) 
               <Typography>
                 {name}
               </Typography>
-              <Typography>
+              <Typography className={classes.gameDeveloperText}>
                 {developer}
               </Typography>
             </div>
