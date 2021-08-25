@@ -1,5 +1,5 @@
-function LogList(){
+function LogList() {
 
 }
 
-export  default LogList;
+export default LogList;

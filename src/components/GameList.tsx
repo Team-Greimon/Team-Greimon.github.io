@@ -1,27 +1,38 @@
 import { Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import { useEffect, useState } from "react";
-import game_image from "../contents/game_list/NoIdea/image.png"
-import game_info from "../contents/game_list/NoIdea/info.json"
+import game_info from "../contents/games.json"
 import { GameInfo } from "../types/FileTypes";
 import GameInfoCard from "./GameInfoCard";
-import * as fs from 'fs'
 
-const  useStyles =  makeStyles({
-  root:{
-    display:'flex',
-    width:'480px',
-    height:'480px',
+const useStyles = makeStyles({
+  root: {
+    display: 'flex',
+    width: '480px',
+    height: '480px',
+    flexDirection: 'column',
+    overflow: 'auto',
+    msOverflowStyle: 'none',
+    scrollbarWidth: 'none',
+    '&::-webkit-scrollbar': {
+      display: 'none'
+    },
+  },
+  gameCard: {
+    marginBottom: '4px',
   }
 })
 
-function  GameList(){
+function GameList() {
   const classes = useStyles()
-  const [gameList,setGameList]= useState<Array<GameInfo>>([])
 
   return (
     <div className={classes.root}>
-      <GameInfoCard name={game_info.name} link={game_info.link} image={game_image} developer={game_info.developer}/>
+      {game_info.map((item, value) => {
+        return (
+          <GameInfoCard key={value} name={item.name} link={item.link} image={"../contents/game_list/NoIdea/image.png"} developer={item.developer} fadeTimeout={(value + 1) * 500} />
+        )
+      })}
     </div>
   )
 }

@@ -1,20 +1,20 @@
-import {makeStyles} from '@material-ui/core/styles'
+import { makeStyles } from '@material-ui/core/styles'
 
-export interface LogContainerProps{
+export interface LogContainerProps {
   timeStamp: string,
   message: string,
 }
 
-const useStyles =makeStyles({
-  root:{
-    
+const useStyles = makeStyles({
+  root: {
+
   },
-  messageContainer:{
+  messageContainer: {
 
   }
 })
 
-function LogContainer({timeStamp, message}:LogContainerProps){
+function LogContainer({ timeStamp, message }: LogContainerProps) {
 
 }
 

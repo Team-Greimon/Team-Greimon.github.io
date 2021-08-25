@@ -1,8 +1,11 @@
-export interface GameInfo{
-  info:JSON,
-  image:string,
+export interface GameInfo {
+  image: string,
+  name: string,
+  link: string,
+  info: string,
+  developer: string,
 }
 
-export interface ActivityLog{
+export interface ActivityLog {
 
 }
