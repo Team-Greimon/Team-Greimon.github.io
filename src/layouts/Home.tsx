@@ -46,7 +46,7 @@ function Home() {
     <div className={classes.root}>
       <Slide direction="down"
         in={true}
-        timeout={1000}
+        timeout={600}
         onEntered={() => { setSlideFinish(!isSlideFinish) }}>
         <Card className={classes.profileCard}>
           {homeDisplay(homeDisplaySwitch, isSlideFinish)}

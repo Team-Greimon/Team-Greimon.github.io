@@ -28,7 +28,7 @@ function LogList() {
     <div className={classes.root}>
       {logList.map((item, value) => {
         return (
-          <LogContainer key={value} timeStamp={item.key} username={item.name} message={item.content} fadeTimeout={(value + 1) * 500} />
+          <LogContainer key={value} timeStamp={item.key} username={item.name} message={item.content} fadeTimeout={(value + 1) * 300} />
         )
       })}
     </div>

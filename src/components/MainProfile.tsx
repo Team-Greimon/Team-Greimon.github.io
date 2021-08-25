@@ -38,31 +38,31 @@ function MainProfile({ isSlideFinish }: MainProfileProps) {
   const [isTypoFinish, setTypoFinish] = useState(false)
   return (
     <div className={classes.root}>
-      <Fade in={isSlideFinish} timeout={1000}
+      <Fade in={isSlideFinish} timeout={700}
         onEntered={() => { setTypoFinish(true) }}
       >
         <Typography className={classes.headerText}>
           안녕하세요 Team-Greimon 입니다!
         </Typography>
       </Fade>
-      <Fade in={isSlideFinish} timeout={2000}>
+      <Fade in={isSlideFinish} timeout={1400}>
         <Typography>
           Team-Greimon 은  2인으로 구성된 게임 개발 동아리입니다.
         </Typography>
       </Fade>
-      <Fade in={isSlideFinish} timeout={2500}>
+      <Fade in={isSlideFinish} timeout={1800}>
         <Typography>
           각자 자유롭게 게임을 만들고 있습니다.
         </Typography>
       </Fade>
       <Divider className={classes.dividerStyle} />
       <div className={classes.memberInfoContainer}>
-        <Fade in={isTypoFinish} timeout={1000}>
+        <Fade in={isTypoFinish} timeout={700}>
           <div className={classes.memberCard}>
             <MemberInfoCard profileImage={ProfileImageCakelemon} memberName="Cakelemon" memberIntro={memberIntro.Cakelemon.intro} memberBlog={memberIntro.Cakelemon.blog} memberGithub={memberIntro.Cakelemon.github} />
           </div>
         </Fade>
-        <Fade in={isTypoFinish} timeout={2000}>
+        <Fade in={isTypoFinish} timeout={1400}>
           <div className={classes.memberCard}>
             <MemberInfoCard profileImage={ProfileImageGreimul} memberName="GreimuL" memberIntro={memberIntro.GreimuL.intro} memberBlog={memberIntro.GreimuL.blog} memberGithub={memberIntro.GreimuL.github} />
           </div>

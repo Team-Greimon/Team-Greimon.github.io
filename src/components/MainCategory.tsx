@@ -30,7 +30,7 @@ function MainCategory({ setHomeDisplay }: MainCategoryProps) {
     <div className={classes.root}>
       <Slide direction="down"
         in={true}
-        timeout={1500}
+        timeout={1000}
       >
         <Card className={classes.categoryContainer}>
           <Tooltip className={classes.tooltip} title="동아리 정보" placement="right" arrow>
