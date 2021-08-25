@@ -2,7 +2,7 @@ import { Card, CardActionArea, CardContent, CardMedia, Fade, makeStyles, Typogra
 
 const useStyles = makeStyles({
   root: {
-    width: '480px',
+    maxWidth: '480px',
     height: '100px',
     marginBottom: '8px',
   },

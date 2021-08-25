@@ -9,11 +9,12 @@ import MemberInfoCard from './MemberInfoCard'
 
 const useStyles = makeStyles({
   root: {
-    width: '480px',
+    maxWidth: '480px',
     height: '480px',
   },
   memberInfoContainer: {
     display: 'flex',
+    flexWrap: 'wrap',
     alignItems: 'flex-end',
     justifyContent: 'space-around',
   },

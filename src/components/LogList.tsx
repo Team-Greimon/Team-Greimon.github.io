@@ -6,7 +6,7 @@ import LogContainer from "./LogContainer";
 const useStyles = makeStyles({
   root: {
     display: 'flex',
-    width: '480px',
+    maxWidth: '480px',
     height: '480px',
     flexDirection: 'column',
     overflow: 'auto',
