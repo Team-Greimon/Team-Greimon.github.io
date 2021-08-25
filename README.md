@@ -1,6 +1,9 @@
 # Team Greimon 의 팀 블로그 입니다.
-https://team-greimon.github.io  
-React + typescript 를 사용했습니다.
+https://team-greimon.github.io   
+   
+<img src="./capture/1.JPG" width="50%" height="50%">    
+
+React + typescript 를 사용했습니다.   
 
 일단은 적당히 구현만 해두었습니다.
 
